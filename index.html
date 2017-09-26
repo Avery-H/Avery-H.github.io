@@ -1,9 +1,197 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Nada</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/lumen/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<style type="text/css">
+	html{
+		height: 100%;
+	}
+	body{
+		font-family: 'Merriweather', serif;
+		background-color: #fff6e7;
+		height: 100%;
+		padding:0px;
+		margin:0px;
+	}
+	ul {
+		position: fixed;
+    	list-style-type: none;
+    	margin: 0;
+    	padding: 0;
+    	overflow: hidden;
+    	background-color: #333;
+    	width: 100%;
+    	z-index:1;
+	}
+
+	li {
+    	float: right;
+	}
+	p{
+		background-image: papayawhip, linear-gradient(to bottom, rgba(76, 76, 76,1) 0%, rgba(177, 169, 169, 1) 100%);
+    	background-clip: content-box, padding-box;
+		padding-left: 30px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: 1.2em;
+		margin:0px;
+	}
+	li a {
+    	display: block;
+    	font-size: 1.2em;
+    	color: white;
+    	text-align: center;
+    	padding: 20px 16px;
+    	text-decoration: none;
+	}
+
+/* Change the link color to #111 (black) on hover */
+	li a:hover {
+    	background-color: #111;
+    	color: aqua;
+	}
+	.bgImg1 { 
+    /* The image used */
+    	background-image: url("img/Me.png");
+
+    /* Set a specific height */
+    	height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    	background-attachment: fixed;
+    	background-position: center;
+    	background-repeat: no-repeat;
+    	background-size: cover;
+	}
+
+	.bgImg2 { 
+    /* The image used */
+    	background-image: url("img/sample1.jpeg");
+
+    /* Set a specific height */
+    	height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    	background-attachment: fixed;
+    	background-position: center;
+    	background-repeat: no-repeat;
+    	background-size: cover;
+	}
+
+	.bgImg3 { 
+    /* The image used */
+    	background-image: url("img/sample4.jpg");
+
+    /* Set a specific height */
+    	height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    	background-attachment: fixed;
+    	background-position: center;
+    	background-repeat: no-repeat;
+    	background-size: cover;
+	}
+	.floatingbox{
+		position: relative;
+    	left: 0;
+    	top: 50%;
+    	width: 100%;
+    	text-align: center;
+    	color: #000;
+	}
+	.actualbox{
+		background-color: #111;
+    	color: #fff;
+    	padding: 18px;
+    	font-size: 25px;
+    	letter-spacing: 10px;
+	}
+	dl{
+		padding-left: 10px;
+	}
+	dd{
+		padding-left: 20px;
+	}
+	</style>
 </head>
 <body>
-yo
+<!-- <span id="candle-light"></span>
+<span><img id="curser" src="img/curser.gif"></span> -->
+		<ul >
+  			<li style="float:left"><a href="default.asp">Home</a></li>
+  			
+  			<li><a href="about.asp">Resume</a></li>
+  			<li><a href="#ref">Projects</a></li>
+  			<li><a href="#about">About Me</a></li>
+		</ul>
+		<div class="bgImg1">
+			<div class="floatingbox">
+				<span class="actualbox"  id="about">Avery Hankins</span>
+			</div>
+		</div>
+			<p>I am a computer programmer who loves to code in many laungueges including but not limited to PHP, Java, JavaScript, and Ruby. I also work with many powerfull frame works such as Laravel. I like long walks on the beach and fruity drinks. At the same time I like video games and straight brandy that burns oh so good.</p>
+		<div class="bgImg2">
+			<div class="floatingbox">
+				<span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">As A Developer</span>
+			</div>
+		</div>
+		<p>I've loved coding since I first started back in highschool. It was the only thing I could do hours on end without becoming bored. Writing code in my eyes is the same as inventing new things, becoming a creator of your own world.</p>
+			<h2>Skills</h2>
+			<dl>
+				<dt>Languages</dt>
+					<dd>PHP</dd>
+					<dd>Java</dd>
+					<dd>Ruby</dd>
+					<dd>JavaScript</dd>
+					<dd>HTML</dd>
+					<dd>CSS</dd>
+			</dl>
+			</ul>
+		<div class="bgImg3">
+			<div class="floatingbox">
+				<span class="border" id="res" style="background-color:transparent;font-size:25px;color: #f7f7f7;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;">PROJECTS</span>
+			</div>
+		</div>
+		 <div class="projects-clean">
+        <div class="container">
+            <div class="intro">
+                <h1 class="resume-titles" style="text-align:center;">Projects</h1>
+                <p class="text-center main-text">Things I have worked on in recent times</p>
+            </div>
+            <div class="row projects">
+                <div class="col-lg-6 col-sm-6 item">
+                    <a href="http://theworldlottery.world" target="blank"><img class="img-responsive portfolio-img" src="img/Theworld.png"></a>
+                    <h3>The World Lottery</h3>
+                    <p class="main-text">A world wide lottery made to help support charities and volunteer work.</p>
+                </div>
+                <div class="col-lg-6 col-sm-6 item">
+                    <a href="StarWars_simon.html" target="blank"><img src="img/starwars.png" class="img-responsive portfolio-img" /></a>
+                    <h3>Star Wars Simon Says</h3>
+                    <p class="main-text">A simon says game but with gifs. Defend off Anakins attacks. ( I know, imma nerd.)</p>
+                </div>
+                
+            </div>
+            <div class="row projects">
+                <div class="col-lg-6 col-sm-6 item">
+                    <img class="img-responsive portfolio-img" src="img/adlister.png">
+                    <h3>Inventor-Center!</h3>
+                    <p class="main-text">A site for geniuses to display their newly made products!</p>
+                </div>
+                <div class="col-lg-6 col-sm-6 item">
+                    <a href="tictachoes.html" target="blank"><img src="img/tictac.png" class="img-responsive portfolio-img" /></a>
+                    <h3>Tic-Tac-Toe Game</h3>
+                    <p class="main-text">A basic tic-tac-toe game.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </body>
 </html>
